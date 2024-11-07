@@ -139,7 +139,8 @@ h6,
 img.object-fit {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .headerMarquee .swiper-wrapper,
@@ -282,7 +283,8 @@ header .dropdown-item:hover .dropdown-menu {
 
 .brandslider .marquee img {
   aspect-ratio: 5;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .category_product {
@@ -369,6 +371,4 @@ header .dropdown-item:hover .dropdown-menu {
 }
 .for_you_product .for_you_product_item .hover-img {
   display: none;
-}
-
-/*# sourceMappingURL=custom.css.map */
+}/*# sourceMappingURL=custom.css.map */
