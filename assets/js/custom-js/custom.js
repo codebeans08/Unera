@@ -162,3 +162,18 @@ $(window).scroll(function () {
     $(".header").removeClass("fixed-header");
   }
 });
+
+
+
+// search box show hide 
+$(document).ready(function () {
+  $(".serch_sec").hide();
+
+  $("#search_here").click(function () {
+    $(".serch_sec").slideToggle();
+
+  });
+  $(".close_search_sec").click(function () {
+    $(".serch_sec").slideUp();
+  });
+});

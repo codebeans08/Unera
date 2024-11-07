@@ -78,7 +78,7 @@
         </div>
       </div>
     </div>
-    <div class="header">
+    <div class="header relative">
       <div class="container mx-auto py-8">
         <div class="flex justify-between items-center">
           <a href="/">
@@ -2245,7 +2245,7 @@
           </nav>
 
           <div class="flex items-center gap-[1.6rem]">
-            <a href="#">
+            <a href="#" id="search_here">
               <img src="./assets/imgs/search.svg" alt="" />
             </a>
 
@@ -2264,9 +2264,73 @@
         </div>
       </div>
 
-      <div class="ser bg-white">
-        <div class="mx-auto">
+      <div class="serch_sec bg-white absolute top-0 left-0 w-full p-12 hidden">
+        <div class="mx-auto max-w-[100rem] relative">
+          <div class="dark_logo text-center mb-12">
+            <a href="/" class="inline-block">
+              <img src="./assets/imgs/dark-logo.svg" alt="">
+            </a>
+          </div>
 
+          <div class="search_input">
+            <form action="">
+              <div class="form-group border relative ">
+                <input type="text" placeholder="Search" class="w-full py-4 ps-4 pe-12 form-control">
+                <button role="button" class="submit-form absolute right-0 top-0 h-full z-[1]"><i
+                    class="fa-light fa-magnifying-glass"></i></button>
+              </div>
+
+
+            </form>
+          </div>
+          <div class="popular-search mt-16">
+            <div class="flex justify-between">
+              <div class="search-values">
+                <h4 class="mb-12">POPULAR SEARCHES</h4>
+                <ul class="grid grid-cols-2 opacity-70 gap-x-8 gap-y-4">
+                  <li><a href="">Opal</a></li>
+                  <li><a href="">Rings</a></li>
+                  <li><a href="">Cross</a></li>
+                  <li><a href="">wedding rings</a></li>
+                  <li><a href="">Emerald</a></li>
+                  <li><a href="">Pearl ring</a></li>
+                  <li><a href="">Aquamarine</a></li>
+                  <li><a href="">Pearl</a></li>
+                  <li><a href="">Blue topaz</a></li>
+                  <li><a href="">Tanzanite</a></li>
+                  <li><a href="">Pendant</a></li>
+                  <li><a href="">Citrine</a></li>
+                  <li><a href="">Morganite</a></li>
+                  <li><a href="">London blue topaz ring</a></li>
+                </ul>
+              </div>
+              <div class="grid grid-flow-row auto-rows-max [&amp;>*]:max-w-[41.2rem]"
+                style="grid-template-rows: 1fr 1fr">
+                <div class="product_col relative">
+                  <img src="./assets/imgs/product-img-compress.webp" alt="" class="object-fit">
+                  <div class="overlay-color bg-black/40"></div>
+                  <div class="overlay-link">
+                    <a href="#" class="flex items-center gap-[0.8rem]">Diamond Studs
+                      <i class="fa-regular fa-angle-right text-[1rem]"></i></a>
+                  </div>
+                </div>
+
+                <div class="product_col relative">
+                  <img src="./assets/imgs/product-img-2-compress.webp" alt="" class="object-fit">
+                  <div class="overlay-color bg-black/40"></div>
+                  <div class="overlay-link">
+                    <a href="#" class="flex items-center gap-[0.8rem]">Blue Sapphire Earrings
+                      <i class="fa-regular fa-angle-right text-[1rem]"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="close_search_sec cursor-pointer absolute right-0 top-4 z-[2]">
+            <i class="fa-light fa-xmark"></i>
+          </div>
         </div>
       </div>
     </div>
