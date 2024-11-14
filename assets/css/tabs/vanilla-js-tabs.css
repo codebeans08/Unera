@@ -1,0 +1,11 @@
+.js-tabs__header {
+  display: block;
+
+  overflow: hidden;
+}
+
+.js-tabs__title {
+  cursor: pointer;
+  display: block;
+  transition: all 0.25s;
+}
