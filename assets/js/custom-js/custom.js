@@ -95,6 +95,66 @@ $(document).ready(function () {
     },
     effect: "slide",
   });
+  var foryouSwiper = new Swiper("#customerSlider", {
+    slidesPerView: 5,
+    spaceBetween: 24,
+    loop: true,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 5,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+    },
+    effect: "slide",
+  });
+  var foryouSwiper = new Swiper("#bdayColor", {
+    slidesPerView: 8,
+    spaceBetween: 0,
+    loop: true,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 8,
+      },
+      992: {
+        slidesPerView: 7,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      576: {
+        slidesPerView: 3,
+      },
+    },
+    effect: "slide",
+  });
 });
 
 // HERO SLIDER
