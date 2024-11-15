@@ -135,6 +135,27 @@ img.object-fit {
   transition-timing-function: linear !important;
 }
 
+.bg-style-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.outline-btn {
+  border: 0.1rem solid #fff;
+  background-color: transparent;
+  padding: 1.2rem 2rem;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.1rem;
+  transition: 300ms all ease-in-out;
+  display: inline-block;
+}
+.outline-btn:hover {
+  background-color: #fff;
+  color: #2f0000;
+}
+
 .navbar .nav-item .nav-link {
   color: #fff;
   transition: 300ms all ease-in-out;
@@ -528,14 +549,9 @@ header .dropdown-item:hover .dropdown-menu {
   color: #ead1c9;
 }
 
-.collection_banner {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.collection_banner h1 {
-  font-family: "Lavishly Yours", cursive;
+.collection_banner h3 {
   font-size: clamp(4.364rem, 3vw, 6rem);
+  line-height: 1.5;
 }
 .collection_banner h5 {
   text-transform: uppercase;

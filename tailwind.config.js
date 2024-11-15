@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         lato: ["Lato"],
+        jwellery: ['Lavishly Yours', 'cursive'],
       },
       fontWeight: {
         light: 300,
