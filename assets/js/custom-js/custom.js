@@ -21,6 +21,10 @@ var tabs = Tabs({
   open: 0,
 });
 
+var tabs = Tabs({
+  elem: "customDsign",
+  open: 0,
+});
 var swiper = new Swiper(".brandslider", {
   slidesPerView: 6,
   spaceBetween: 100,

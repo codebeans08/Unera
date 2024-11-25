@@ -70,8 +70,7 @@
 @font-face {
   font-family: "Lato";
   src: url("../../fonts/lato/Lato-Semibold.eot");
-  src: url("../../fonts/lato/Lato-Semibold.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("../../fonts/lato/Lato-Semibold.eot?#iefix") format("embedded-opentype"),
     url("../../fonts/lato/Lato-Semibold.woff2") format("woff2"),
     url("../../fonts/lato/Lato-Semibold.ttf") format("truetype");
   font-weight: 600;
@@ -82,8 +81,7 @@
 @font-face {
   font-family: "Lato";
   src: url("../../fonts/lato/Lato-Medium.eot");
-  src: url("../../fonts/lato/Lato-Medium.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("../../fonts/lato/Lato-Medium.eot?#iefix") format("embedded-opentype"),
     url("../../fonts/lato/Lato-Medium.woff2") format("woff2"),
     url("../../fonts/lato/Lato-Medium.ttf") format("truetype");
   font-weight: 500;
@@ -94,8 +92,7 @@
 @font-face {
   font-family: "Lato";
   src: url("../../fonts/lato/Lato-Regular.eot");
-  src: url("../../fonts/lato/Lato-Regular.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("../../fonts/lato/Lato-Regular.eot?#iefix") format("embedded-opentype"),
     url("../../fonts/lato/Lato-Regular.woff2") format("woff2"),
     url("../../fonts/lato/Lato-Regular.ttf") format("truetype");
   font-weight: normal;
@@ -200,13 +197,13 @@ img.object-fit {
   }
 }
 
-.bg-style-img{
+.bg-style-img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.outline-btn{
+.outline-btn {
   border: 0.1rem solid #fff;
   background-color: transparent;
   padding: 1.2rem 2rem;
@@ -216,7 +213,7 @@ img.object-fit {
   transition: $transition;
   display: inline-block;
 
-  &:hover{
+  &:hover {
     background-color: #fff;
     color: $secondary;
   }
@@ -322,7 +319,9 @@ header {
 .serch_sec {
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
 }
+
 .form-control {
+
   &:focus,
   &:active,
   &:focus-visible {
@@ -766,4 +765,8 @@ header {
 
 }
 
-.jewelry_love {}
+.gif_sec {
+  .h1 {
+    font-size: 8rem;
+  }
+}
