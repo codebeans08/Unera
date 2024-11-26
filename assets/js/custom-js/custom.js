@@ -1,15 +1,25 @@
 var swiper = new Swiper(".headerMarquee", {
-  slidesPerView: 8,
-  spaceBetween: 24,
+  slidesPerView: 1.5,
+  spaceBetween: 18,
   loop: true,
-  autoplay: true,
-  speed: 6000,
   autoplay: {
     delay: 0,
+    disableOnInteraction: false,
   },
+  speed: 6000,
   allowTouchMove: false,
-  disableOnInteraction: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 8,
+      spaceBetween: 24,
+    },
+    576: {
+      slidesPerView: 1,
+      spaceBetween: 8,
+    },
+  },
 });
+
 
 var tabs = Tabs({
   elem: "tabs",
@@ -25,9 +35,10 @@ var tabs = Tabs({
   elem: "customDsign",
   open: 0,
 });
+
 var swiper = new Swiper(".brandslider", {
-  slidesPerView: 6,
-  spaceBetween: 100,
+  slidesPerView: 3,
+  spaceBetween: 20,
   loop: true,
   autoplay: {
     delay: 0,
@@ -35,13 +46,23 @@ var swiper = new Swiper(".brandslider", {
   speed: 6000,
   allowTouchMove: false,
   grabCursor: false,
+  breakpoints: {
+    1920: {
+      slidesPerView: 6,
+      spaceBetween: 100,
+    },
+  },
 });
 
 $(document).ready(function () {
   var categorySwiper = new Swiper(".categorySlider", {
-    slidesPerView: 6,
-    spaceBetween: 24,
+    slidesPerView: 1.5,
+    spaceBetween: 16,
     loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
 
     navigation: {
       nextEl: ".swiper-button-next",
@@ -55,24 +76,27 @@ $(document).ready(function () {
     breakpoints: {
       1200: {
         slidesPerView: 6,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
       },
       992: {
-        slidesPerView: 3,
+        slidesPerView: 4,
       },
-      768: {
-        slidesPerView: 2,
-      },
-      576: {
-        slidesPerView: 1,
-      },
+
     },
     effect: "slide",
   });
-
   var foryouSwiper = new Swiper("#foryouSlider", {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 24,
     loop: true,
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
 
     navigation: {
       nextEl: ".swiper-button-next",
@@ -100,9 +124,14 @@ $(document).ready(function () {
     effect: "slide",
   });
   var foryouSwiper = new Swiper("#customerSlider", {
-    slidesPerView: 5,
+    slidesPerView: 1,
     spaceBetween: 24,
     loop: true,
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
 
     navigation: {
       nextEl: ".swiper-button-next",
@@ -129,15 +158,13 @@ $(document).ready(function () {
     },
     effect: "slide",
   });
+
   var foryouSwiper = new Swiper("#bdayColor", {
-    slidesPerView: 8,
+    slidesPerView: 3,
     spaceBetween: 0,
     loop: true,
 
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+
 
     keyboard: {
       enabled: true,
@@ -146,6 +173,10 @@ $(document).ready(function () {
     breakpoints: {
       1200: {
         slidesPerView: 8,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       },
       992: {
         slidesPerView: 7,
@@ -159,6 +190,7 @@ $(document).ready(function () {
     },
     effect: "slide",
   });
+
 });
 
 // HERO SLIDER
@@ -250,7 +282,7 @@ $(document).ready(function () {
   $video.on("mouseleave", function () {
     this.pause();
     this.currentTime = 0;
-    this.load(); // poster ko dobara load karta hai
+    this.load();
   });
 });
 
@@ -271,5 +303,38 @@ $(document).ready(function () {
     $(this).addClass("is-active");
     var colorName = $(this).data("value");
     $productItem.find("[data-change-title]").text(" - " + colorName);
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper(".mySwiperGift", {
+    slidesPerView: 1,
+    spaceBetween: 24,
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 24,
+      },
+    },
   });
 });
