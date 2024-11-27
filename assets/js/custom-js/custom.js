@@ -1,24 +1,39 @@
-var swiper = new Swiper(".headerMarquee", {
-  slidesPerView: 1.5,
-  spaceBetween: 18,
-  loop: true,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
-  speed: 6000,
-  allowTouchMove: false,
-  breakpoints: {
-    768: {
-      slidesPerView: 8,
-      spaceBetween: 24,
+var swiper = new Swiper(".headerMarquee",
+  {
+    slidesPerView: 1.6,
+    spaceBetween: 0 ,
+    loop: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
     },
-    576: {
-      slidesPerView: 1,
-      spaceBetween: 8,
+    speed: 6000,
+    allowTouchMove: false,
+    breakpoints: {
+      1600: {
+        slidesPerView: 7,
+        spaceBetween: 10,
+      },
+      1400: {
+        slidesPerView: 6,
+        spaceBetween: 10,
+      },
+
+
+      1024: {
+        slidesPerView: 4.3,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3.3,
+        spaceBetween: 20,
+      },
+      576: {
+        slidesPerView: 2.5,
+        spaceBetween: 20,
+      },
     },
-  },
-});
+  });
 
 
 var tabs = Tabs({
